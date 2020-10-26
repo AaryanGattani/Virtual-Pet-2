@@ -45,6 +45,16 @@ function draw(){
   
  fill(255,255,254);
  textSize(15);
+ if(Lastfeed>=12)
+ {
+   text("Last Feed :" + Lastfeed%12 + "AM", 350,200);
+ }else if(Lastfeed ===0 )
+ {
+   text("Last Feed : 12 AM" , 350,200)
+ }else
+ {
+   text("Last Feed :" + Lastfeed + "PM", 350,200);
+ }
 
 drawSprites();
 }
